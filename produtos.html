@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos — Rebello Confeitaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="produtos.html" class="active">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="busca.html" method="get">
+        <button type="submit" aria-label="Buscar">&#128269;</button>
+        <input type="text" name="q" placeholder="O que deseja?">
+      </form>
+      <a class="icon-link" href="cadastro.html" title="Minha conta">&#128100;</a>
+      <a class="icon-link" href="pedidos.html" title="Meus pedidos">&#128722;<span class="badge">3</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <p class="eyebrow">Catálogo completo</p>
+    <h1>Nossos Produtos</h1>
+    <div class="divider"></div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container layout-with-sidebar">
+
+      <aside class="filters">
+        <h3>Filtrar</h3>
+        <div class="filter-group">
+          <span class="filter-label">Categoria</span>
+          <label><input type="checkbox" checked> Brigadeiros</label>
+          <label><input type="checkbox"> Bolos</label>
+          <label><input type="checkbox"> Trufas</label>
+          <label><input type="checkbox"> Doces para festa</label>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Preço</span>
+          <label><input type="radio" name="preco"> Até R$ 20</label>
+          <label><input type="radio" name="preco"> R$ 20 a R$ 80</label>
+          <label><input type="radio" name="preco"> Acima de R$ 80</label>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Ocasião</span>
+          <label><input type="checkbox"> Aniversário</label>
+          <label><input type="checkbox"> Casamento</label>
+          <label><input type="checkbox"> Corporativo</label>
+        </div>
+        <button class="btn btn-outline btn-block btn-sm">Aplicar filtros</button>
+      </aside>
+
+      <div>
+        <div class="results-toolbar">
+          <span style="color:var(--text-dim); font-size:.85rem;">18 produtos encontrados</span>
+          <select>
+            <option>Ordenar por relevância</option>
+            <option>Menor preço</option>
+            <option>Maior preço</option>
+            <option>Mais vendidos</option>
+          </select>
+        </div>
+
+        <div class="product-grid">
+
+          <div class="product-card">
+            <a href="produto.html?id=1" class="photo tone-blue"><span class="tag">Brigadeiro</span></a>
+            <div class="product-body">
+              <span class="product-cat">Brigadeiros</span>
+              <h3 class="product-title">Brigadeiro Gourmet Trufado</h3>
+              <p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="product-foot"><span class="price">R$ 3,50</span><a href="produto.html?id=1" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=2" class="photo"><span class="tag">Bolo</span></a>
+            <div class="product-body">
+              <span class="product-cat">Bolos</span>
+              <h3 class="product-title">Bolo de Chocolate Belga</h3>
+              <p class="product-desc">Ut enim ad minim veniam quis nostrud exercitation.</p>
+              <div class="product-foot"><span class="price"><span class="old">R$ 95</span>R$ 79,90</span><a href="produto.html?id=2" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=3" class="photo tone-cream"><span class="tag">Festa</span></a>
+            <div class="product-body">
+              <span class="product-cat">Doces para festa</span>
+              <h3 class="product-title">Mesa de Doces Mini (30un)</h3>
+              <p class="product-desc">Duis aute irure dolor in reprehenderit in voluptate.</p>
+              <div class="product-foot"><span class="price">R$ 128,00</span><a href="produto.html?id=3" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=4" class="photo"><span class="tag">Trufa</span></a>
+            <div class="product-body">
+              <span class="product-cat">Trufas</span>
+              <h3 class="product-title">Trufa Belga ao Leite</h3>
+              <p class="product-desc">Excepteur sint occaecat cupidatat non proident.</p>
+              <div class="product-foot"><span class="price">R$ 4,20</span><a href="produto.html?id=4" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=5" class="photo tone-blue"><span class="tag">Brigadeiro</span></a>
+            <div class="product-body">
+              <span class="product-cat">Brigadeiros</span>
+              <h3 class="product-title">Brigadeiro de Pistache</h3>
+              <p class="product-desc">Sed ut perspiciatis unde omnis iste natus error.</p>
+              <div class="product-foot"><span class="price">R$ 4,90</span><a href="produto.html?id=5" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=6" class="photo tone-cream"><span class="tag">Bolo</span></a>
+            <div class="product-body">
+              <span class="product-cat">Bolos</span>
+              <h3 class="product-title">Bolo Red Velvet</h3>
+              <p class="product-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+              <div class="product-foot"><span class="price">R$ 89,90</span><a href="produto.html?id=6" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=7" class="photo"><span class="tag">Trufa</span></a>
+            <div class="product-body">
+              <span class="product-cat">Trufas</span>
+              <h3 class="product-title">Trufa de Maracujá</h3>
+              <p class="product-desc">Neque porro quisquam est qui dolorem ipsum quia.</p>
+              <div class="product-foot"><span class="price">R$ 4,20</span><a href="produto.html?id=7" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a href="produto.html?id=8" class="photo tone-blue"><span class="tag">Festa</span></a>
+            <div class="product-body">
+              <span class="product-cat">Doces para festa</span>
+              <h3 class="product-title">Kit Festa Infantil (50un)</h3>
+              <p class="product-desc">Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+              <div class="product-foot"><span class="price">R$ 210,00</span><a href="produto.html?id=8" class="btn btn-ghost btn-sm">Ver</a></div>
+            </div>
+          </div>
+
+        </div>
+
+        <nav class="pagination" aria-label="Paginação">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">&#8250;</a>
+        </nav>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br>Rua das Confeitarias, 123 — Belo Horizonte, MG &nbsp;|&nbsp; (31) 99999-0000 &nbsp;|&nbsp; contato@rebelloconfeitaria.com.br</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">&#128247;</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="WhatsApp">&#128241;</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

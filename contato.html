@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Rebello Confeitaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="busca.html" method="get">
+        <button type="submit" aria-label="Buscar">&#128269;</button>
+        <input type="text" name="q" placeholder="O que deseja?">
+      </form>
+      <a class="icon-link" href="cadastro.html" title="Minha conta">&#128100;</a>
+      <a class="icon-link" href="pedidos.html" title="Meus pedidos">&#128722;<span class="badge">3</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <p class="eyebrow">Siga nossas redes!</p>
+    <h1>Fale com a Rebello</h1>
+    <div class="social-row">
+      <a href="#" aria-label="Instagram">&#128247;</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="WhatsApp">&#128241;</a>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container text-center">
+      <p class="eyebrow">Confira nossas receitas</p>
+      <h2 class="script-title">no nosso canal!</h2>
+      <div style="display:flex; align-items:center; justify-content:center; gap:1.5rem; margin-top:1.5rem;">
+        <span class="script" style="font-size:3rem;">R</span>
+        <a href="#" class="btn" style="background:#e02b1d; color:#fff; border-radius:8px; padding:1rem 1.4rem; font-size:1.3rem;" aria-label="YouTube">&#9654;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow center">Fale com a gente</p>
+      <h2>Tem algo a dizer? Preencha o formulário abaixo!</h2>
+
+      <form class="form-shell" style="margin-top:2.5rem;" action="#" method="post">
+        <div class="form-grid">
+          <div class="field">
+            <label for="nome">Seu Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
+          </div>
+          <div class="field">
+            <label for="telefone">Seu Telefone</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000">
+          </div>
+          <div class="field full">
+            <label for="email">Seu E-mail</label>
+            <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="field full">
+            <label>Deseja receber novidades?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="novidades" value="sim" checked> Sim</label>
+              <label><input type="radio" name="novidades" value="nao"> Não</label>
+            </div>
+          </div>
+          <div class="field full">
+            <label for="mensagem">Sua Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="reset" class="btn btn-ghost">Limpar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        <p class="form-note">Ao enviar, você concorda com o uso dos seus dados para retorno de contato. Este é um formulário de demonstração.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br>Rua das Confeitarias, 123 — Belo Horizonte, MG &nbsp;|&nbsp; (31) 99999-0000 &nbsp;|&nbsp; contato@rebelloconfeitaria.com.br</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">&#128247;</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="WhatsApp">&#128241;</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

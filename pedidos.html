@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus Pedidos — Rebello Confeitaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="busca.html" method="get">
+        <button type="submit" aria-label="Buscar">&#128269;</button>
+        <input type="text" name="q" placeholder="O que deseja?">
+      </form>
+      <a class="icon-link" href="cadastro.html" title="Minha conta">&#128100;</a>
+      <a class="icon-link" href="pedidos.html" title="Meus pedidos"><b style="color:var(--accent-blue)">&#128722;</b><span class="badge">3</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <p class="eyebrow">Carrinho</p>
+    <h1>Meus Pedidos</h1>
+    <div class="divider"></div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+
+      <div class="order-head">
+        <span>Produto</span><span>Descrição</span><span>Preço</span><span>Quantidade</span><span>Total</span>
+      </div>
+
+      <div class="orders-grid" id="orders">
+
+        <div class="order-row" data-price="3.50">
+          <div class="photo tone-blue"></div>
+          <div>
+            <p class="name">Brigadeiro Gourmet Trufado</p>
+            <p class="meta">Brigadeiros &middot; <span class="orders-status">Em preparo</span></p>
+          </div>
+          <div class="meta">R$ 3,50 / un</div>
+          <div class="qty-control">
+            <button type="button" aria-label="Diminuir">&minus;</button>
+            <input type="text" value="12" inputmode="numeric" aria-label="Quantidade">
+            <button type="button" aria-label="Aumentar">+</button>
+          </div>
+          <div>
+            <p class="line-total">R$ 42,00</p>
+            <button class="remove" type="button">Remover</button>
+          </div>
+        </div>
+
+        <div class="order-row" data-price="79.90">
+          <div class="photo"></div>
+          <div>
+            <p class="name">Bolo de Chocolate Belga</p>
+            <p class="meta">Bolos &middot; <span class="orders-status">Confirmado</span></p>
+          </div>
+          <div class="meta">R$ 79,90 / un</div>
+          <div class="qty-control">
+            <button type="button" aria-label="Diminuir">&minus;</button>
+            <input type="text" value="1" inputmode="numeric" aria-label="Quantidade">
+            <button type="button" aria-label="Aumentar">+</button>
+          </div>
+          <div>
+            <p class="line-total">R$ 79,90</p>
+            <button class="remove" type="button">Remover</button>
+          </div>
+        </div>
+
+        <div class="order-row" data-price="4.20">
+          <div class="photo tone-cream"></div>
+          <div>
+            <p class="name">Trufa Belga ao Leite</p>
+            <p class="meta">Trufas &middot; <span class="orders-status">Em preparo</span></p>
+          </div>
+          <div class="meta">R$ 4,20 / un</div>
+          <div class="qty-control">
+            <button type="button" aria-label="Diminuir">&minus;</button>
+            <input type="text" value="10" inputmode="numeric" aria-label="Quantidade">
+            <button type="button" aria-label="Aumentar">+</button>
+          </div>
+          <div>
+            <p class="line-total">R$ 42,00</p>
+            <button class="remove" type="button">Remover</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-top:2.5rem; gap:2rem; flex-wrap:wrap;">
+        <a href="produtos.html" class="btn btn-outline">&larr; Continuar comprando</a>
+
+        <div class="order-summary">
+          <div class="row"><span>Subtotal</span><span id="subtotal">R$ 163,90</span></div>
+          <div class="row"><span>Entrega</span><span>R$ 12,00</span></div>
+          <div class="row total"><span>Total</span><b id="total">R$ 175,90</b></div>
+          <button class="btn btn-primary btn-block" style="margin-top:1.2rem;">Finalizar pedido</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br>Rua das Confeitarias, 123 — Belo Horizonte, MG &nbsp;|&nbsp; (31) 99999-0000 &nbsp;|&nbsp; contato@rebelloconfeitaria.com.br</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">&#128247;</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="WhatsApp">&#128241;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function formatBRL(v){
+    return 'R$ ' + v.toFixed(2).replace('.', ',');
+  }
+  function recalcRow(row){
+    const price = parseFloat(row.dataset.price);
+    const qty = parseInt(row.querySelector('.qty-control input').value) || 0;
+    row.querySelector('.line-total').textContent = formatBRL(price*qty);
+    recalcTotals();
+  }
+  function recalcTotals(){
+    let subtotal = 0;
+    document.querySelectorAll('.order-row').forEach(row=>{
+      const price = parseFloat(row.dataset.price);
+      const qty = parseInt(row.querySelector('.qty-control input').value) || 0;
+      subtotal += price*qty;
+    });
+    document.getElementById('subtotal').textContent = formatBRL(subtotal);
+    document.getElementById('total').textContent = formatBRL(subtotal + 12);
+  }
+  document.querySelectorAll('.order-row').forEach(row=>{
+    const input = row.querySelector('.qty-control input');
+    row.querySelectorAll('.qty-control button').forEach((btn,i)=>{
+      btn.addEventListener('click', ()=>{
+        let v = parseInt(input.value)||1;
+        v = i===0 ? Math.max(1, v-1) : v+1;
+        input.value = v;
+        recalcRow(row);
+      });
+    });
+    input.addEventListener('input', ()=>recalcRow(row));
+    row.querySelector('.remove').addEventListener('click', ()=>{
+      row.remove();
+      recalcTotals();
+    });
+  });
+</script>
+
+</body>
+</html>

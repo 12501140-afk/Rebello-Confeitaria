@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro — Rebello Confeitaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="busca.html" method="get">
+        <button type="submit" aria-label="Buscar">&#128269;</button>
+        <input type="text" name="q" placeholder="O que deseja?">
+      </form>
+      <a class="icon-link" href="cadastro.html" title="Minha conta">&#128100;</a>
+      <a class="icon-link" href="pedidos.html" title="Meus pedidos">&#128722;<span class="badge">3</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <p class="eyebrow">Faça parte</p>
+    <h1>Crie sua conta</h1>
+    <div class="divider"></div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <form class="form-shell" action="#" method="post">
+        <div class="form-grid">
+          <div class="field">
+            <label for="c-nome">Nome completo</label>
+            <input id="c-nome" name="nome" type="text" placeholder="Digite seu nome completo" required>
+          </div>
+          <div class="field">
+            <label for="c-nasc">Data de nascimento</label>
+            <input id="c-nasc" name="nascimento" type="date">
+          </div>
+          <div class="field">
+            <label for="c-email">E-mail</label>
+            <input id="c-email" name="email" type="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="field">
+            <label for="c-telefone">Telefone</label>
+            <input id="c-telefone" name="telefone" type="tel" placeholder="(00) 00000-0000">
+          </div>
+          <div class="field">
+            <label for="c-senha">Senha</label>
+            <input id="c-senha" name="senha" type="password" placeholder="Crie uma senha" required>
+          </div>
+          <div class="field">
+            <label for="c-senha2">Confirmar senha</label>
+            <input id="c-senha2" name="senha2" type="password" placeholder="Repita a senha" required>
+          </div>
+          <div class="field full">
+            <label for="c-endereco">Endereço de entrega</label>
+            <input id="c-endereco" name="endereco" type="text" placeholder="Rua, número, bairro, cidade">
+          </div>
+          <div class="field full">
+            <label>Preferência de contato</label>
+            <div class="radio-row">
+              <label><input type="radio" name="contato-pref" checked> E-mail</label>
+              <label><input type="radio" name="contato-pref"> Telefone</label>
+              <label><input type="radio" name="contato-pref"> WhatsApp</label>
+            </div>
+          </div>
+          <div class="field full">
+            <label style="display:flex; align-items:center; gap:.5rem; text-transform:none; letter-spacing:0; font-size:.85rem; color:var(--text-muted);">
+              <input type="checkbox" required style="accent-color:var(--accent-gold);"> Li e concordo com os termos de uso e a política de privacidade
+            </label>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="reset" class="btn btn-ghost">Limpar</button>
+          <button type="submit" class="btn btn-primary">Criar conta</button>
+        </div>
+        <p class="form-note">Já tem uma conta? <a href="#" style="color:var(--accent-blue);">Entrar</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a href="index.html" class="logo">
+      <span class="glyph">R</span>
+      <span class="word"><b>Rebello</b><span>Confeitaria</span></span>
+    </a>
+    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br>Rua das Confeitarias, 123 — Belo Horizonte, MG &nbsp;|&nbsp; (31) 99999-0000 &nbsp;|&nbsp; contato@rebelloconfeitaria.com.br</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">&#128247;</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="WhatsApp">&#128241;</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
